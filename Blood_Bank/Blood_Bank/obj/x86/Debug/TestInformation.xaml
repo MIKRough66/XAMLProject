@@ -1,0 +1,120 @@
+﻿<Page
+    x:Class="Blood_Bank.TestInformation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Blood_Bank"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Style="{StaticResource GridStyle02}">
+
+        <Grid Margin="10,20,10,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:ConnectionId='2' x:Name="previous1" Content="Previous" Grid.Row="9" Grid.Column="10" Height="50" Width="100" FontSize="20" Foreground="White" FontWeight="Bold"/>
+            <Button x:ConnectionId='3' x:Name="next1" Content="Next" Grid.Row="9" Grid.Column="12" Height="50" Width="100" FontSize="20" Foreground="White" FontWeight="Bold"/>
+
+
+            <TextBlock Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="10" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="Test Result" FontSize="70"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Entry ID" FontSize="35"/>
+            <TextBox x:ConnectionId='4' x:Name="enteyid" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" Height="50" FontSize="35" />
+
+            <TextBlock Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Donor ID" FontSize="35"/>
+            <TextBox x:ConnectionId='5' x:Name="donorId" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="3" Height="50" FontSize="35" />
+
+            <TextBlock Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Staff ID" FontSize="35"/>
+            <TextBox x:ConnectionId='6' x:Name="staffId" Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="3" Height="50" FontSize="35" />
+
+            <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Test 1" FontSize="35"/>
+            <ComboBox x:ConnectionId='7' x:Name="test1" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" FontSize="35">
+                <ComboBoxItem Content="HIV"/>
+                <ComboBoxItem Content="HepatitisB"/>
+                <ComboBoxItem Content="HepatitisC"/>
+                <ComboBoxItem Content="HTLV"/>
+            </ComboBox>
+            <TextBlock Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Result" FontSize="35"/>
+            <ComboBox x:ConnectionId='8' x:Name="result" Grid.Row="4" Grid.Column="11" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" FontSize="35">
+                <ComboBoxItem Content="Positive"/>
+                <ComboBoxItem Content="Negative"/>
+            </ComboBox>
+
+            <TextBlock Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Test 2" FontSize="35"/>
+            <ComboBox x:ConnectionId='9' x:Name="test2" Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" FontSize="35">
+                <ComboBoxItem Content="HIV"/>
+                <ComboBoxItem Content="HepatitisB"/>
+                <ComboBoxItem Content="HepatitisC"/>
+                <ComboBoxItem Content="HTLV"/>
+            </ComboBox>
+            <TextBlock Grid.Row="5" Grid.Column="8" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Result" FontSize="35"/>
+            <ComboBox x:ConnectionId='10' x:Name="result2" Grid.Row="5" Grid.Column="11" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" FontSize="35">
+                <ComboBoxItem Content="Positive"/>
+                <ComboBoxItem Content="Negative"/>
+            </ComboBox>
+
+            <TextBlock Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Test 3" FontSize="35"/>
+            <ComboBox x:ConnectionId='11' x:Name="test3" Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" FontSize="35">
+                <ComboBoxItem Content="HIV"/>
+                <ComboBoxItem Content="HepatitisB"/>
+                <ComboBoxItem Content="HepatitisC"/>
+                <ComboBoxItem Content="HTLV"/>
+            </ComboBox>
+            <TextBlock Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Result" FontSize="35"/>
+            <ComboBox x:ConnectionId='12' x:Name="result3" Grid.Row="6" Grid.Column="11" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" FontSize="35">
+                <ComboBoxItem Content="Positive"/>
+                <ComboBoxItem Content="Negative"/>
+            </ComboBox>
+
+            <TextBlock Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Test 3" FontSize="35"/>
+            <ComboBox x:ConnectionId='13' x:Name="test4" Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" FontSize="35">
+                <ComboBoxItem Content="HIV"/>
+                <ComboBoxItem Content="HepatitisB"/>
+                <ComboBoxItem Content="HepatitisC"/>
+                <ComboBoxItem Content="HTLV"/>
+            </ComboBox>
+            <TextBlock Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Result" FontSize="35"/>
+            <ComboBox x:ConnectionId='14' x:Name="result4" Grid.Row="7" Grid.Column="11" Grid.ColumnSpan="4" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" FontSize="35">
+                <ComboBoxItem Content="Positive"/>
+                <ComboBoxItem Content="Negative"/>
+            </ComboBox>
+
+            <TextBlock Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Remarks" FontSize="35"/>
+            <TextBox x:ConnectionId='15' x:Name="remarks" Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Width="530" Height="50" FontSize="35" />
+
+
+
+        </Grid>
+
+    </Grid>
+</Page>
+
